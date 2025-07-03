@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamal Khan - Resume</title>
+  <style>
+    :root {
+      --bg-light: radial-gradient(circle at center, #e0eafc, #cfdef3);
+      --bg-dark: radial-gradient(circle at center, #1e1e2f, #12121a);
+      --text-light: #333;
+      --text-dark: #f0f0f0;
+      --card-light: white;
+      --card-dark: #2b2b3d;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+      transition: background 0.5s, color 0.5s;
+      position: relative;
+    }
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .theme-toggle button {
+      padding: 0.4rem 0.8rem;
+      border: none;
+      background: #0072ff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .container {
+      background: var(--card-light);
+      border-radius: 15px;
+      padding: 2rem;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: background 0.5s;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    p.subtitle {
+      color: inherit;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      color: inherit;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+    .dark .container {
+      background: var(--card-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="https://i.postimg.cc/3W527Gsj/profile.jpg" alt="Profile Photo">
+      <h1>Jamal Khan</h1>
+      <p class="subtitle">Tech-savvy BCA Graduate | Data Analysis | Software Projects</p>
+      <p>
+        <a href="https://www.linkedin.com/in/jamal-khan-0a73a9269/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/Leoandrio" target="_blank">GitHub</a>
+      </p>
+    </div>
+
+    <section>
+      <h2>Resume Summary</h2>
+      <p>Tech-savvy and highly motivated BCA graduate with hands-on experience in tech support, software projects, and customer interaction. Skilled in Python, C++, Java with exposure to system troubleshooting. Known for clear communication and adaptability.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Mobile: +91-7248432796<br>Email: jamal.caprio1@gmail.com<br>Location: Rudrapur</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>BCA (Computers)</strong>, Graphic Era Hill University, Nainital – 7.4%<br>Class XII, NOS – 61%<br>Class X, CBSE – 57%</p>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <p><strong>Amazon Affiliate</strong> (Jan 2024 – Present): Promoted affiliate links on Telegram.</p>
+    </section>
+
+    <section>
+      <h2>Internships</h2>
+      <p><strong>Alpha Intern</strong> (Nov 2024 – Jun 2025): Data analysis using marketing data.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>SpotOn</strong>: AI tutor adapting to student learning styles via quizzes.</li>
+        <li><strong>FileVortex</strong>: Secure file-sharing platform for all file sizes.</li>
+        <li><strong>DOCCON</strong>: File format converter with image compression features.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>OOP, Python, SQL, ASP.NET MVC, Git, Tableau, Power BI</li>
+        <li>Communication, Team Leading, MS Office, SharePoint</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p>English, Hindi</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <p>React Native</p>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <p>Interschool football match in GD GOENKA international School , Nainital</p>
+    </section>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
